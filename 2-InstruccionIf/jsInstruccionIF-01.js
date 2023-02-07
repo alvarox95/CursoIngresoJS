@@ -5,6 +5,9 @@ function mostrar()
 
 	edad = txtIdEdad.value;
 
+	edad = parseInt(edad);
+
+
 	if (edad == 15){
 		alert("Niña Bonita")
 	}

@@ -1,6 +1,16 @@
+/*
+Alumno: Alvaro Medici.
+Ejercicio N°: 9
+Tema: IF
+Enunciado:
+Al presionar el Botón, mostrar un número Random del 1 al 10 inclusive*/
+
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	let numeroRandom;
 
-}//FIN DE LA FUNCIÓN
+	numeroRandom = Math.round(Math.random(numeroRandom)*9+1)
+	
+	alert(numeroRandom)
+
+}
