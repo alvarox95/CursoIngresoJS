@@ -41,7 +41,51 @@ function CalcularPrecio ()
             {
                 precioFinal = PrecioSinDescuento * 0.7;
             }
+        }else{
+            if(cantidadDeLamparas == 4)
+            {
+                if(marcaLamparita == "ArgentinaLuz" || marcaLamparita == "FelipeLamparas")
+                {
+                    precioFinal = PrecioSinDescuento * 0.75;
+                }
+                else
+                {
+                    precioFinal = PrecioSinDescuento * 0.8;
+                }
+            }
+            else
+            {
+                if(cantidadDeLamparas == 3)
+                {
+                    if(marcaLamparita == "ArgentinaLuz")
+                    {
+                        precioFinal = PrecioSinDescuento * 0.85;
+                    }
+                    else
+                    {
+                        if(marcaLamparita == "FelipeLamparas")
+                        {
+                            precioFinal = PrecioSinDescuento * 0.9;
+                        }
+                        else
+                        {
+                            precioFinal = PrecioSinDescuento * 0.95;
+                        }
+                    }
+                }
+                else
+                {
+                    precioFinal = PrecioSinDescuento;
+                }
+            }
         }
         
     }
+    if(precioFinal > 119)
+    {
+        precioFinal = precioFinal * 1.1;
+        alert("IIBB Usted pago " + precioFinal);
+    }
+    txtIdprecioDescuento.value = precioFinal;
+
 }

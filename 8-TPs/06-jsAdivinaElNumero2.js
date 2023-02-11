@@ -1,6 +1,9 @@
-/*En esta oportunidad el juego evaluará tus
- aptitudes a partir de la cantidad de intentos, 
- por lo cual se informará lo siguiente:
+/*
+Alumno: Alvaro Medici.
+TP: 6
+Tema: IF/SWITCH 	
+Enunciado:
+En esta oportunidad el juego evaluará tus aptitudes a partir de la cantidad de intentos, por lo cual se informará lo siguiente:
 1° intento: “usted es un Psíquico”.
 2° intento: “excelente percepción”.
 3° intento: “Esto es suerte”.
@@ -9,20 +12,17 @@
 Desde  6 Intentos hasta 10:”falta técnica”
 Más de 10 intentos: “afortunado en el amor!!”.*/
 
-var numeroSecreto; 
+var numeroSecreto;
 var contadorIntentos;
 
-function comenzar()
-{
-	//Genero el número RANDOM entre 1 y 100
-	 
-	
-
+function comenzar() {
+  //Genero el número RANDOM entre 1 y 100
+	numeroSecreto = Math.round(Math.random(numeroSecreto) * 99 + 1);
+	contador = 0;
+	txtIdIntentos.value = contador;
+	alert(numeroSecreto);
 }
 
-function verificar()
-{
+function verificar() {
 	
-	
-
 }
