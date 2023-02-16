@@ -1,18 +1,33 @@
 /*
-Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
-e informar la suma acumulada y el promedio.
+Alumno: Alvaro Medici
+Ejercicio N°: 7
+Tema: While
+Enunciado:
+Al presionar el botón pedir números hasta que el USUARIO QUIERA e informar la suma acumulada y el promedio.
 */
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var respuesta;
-	contador=0;
-	acumulador=0;
-	respuesta='si';
+	debugger;
+	let contador;
+	let acumulador;
+	let respuesta;
+	let pregunta;
+	let numeroIngresado;
 
+	contador = 0;
+	acumulador = 0;
+	respuesta = "si";
+	pregunta = prompt("Desea Ingresar un numero?")
+	
+	while(pregunta == respuesta){
+		contador++;
+		numeroIngresado = prompt("Ingrese un numero");
+		numeroIngresado = parseInt(numeroIngresado);
+		acumulador = acumulador + numeroIngresado;
+		pregunta = prompt("Desea Ingresar Otro Numero?");
+	}
 
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/contador;
 
-}//FIN DE LA FUNCIÓN
+}

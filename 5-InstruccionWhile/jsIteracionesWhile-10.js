@@ -1,4 +1,8 @@
 /*
+Alumno: Alvaro Medici
+Ejercicio N°: 10
+Tema: While
+Enunciado:
 Al presionar el botón pedir  números  
 hasta que el usuario quiera, mostrar:
 1-Suma de los negativos.
