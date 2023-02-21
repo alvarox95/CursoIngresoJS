@@ -7,7 +7,6 @@ Al presionar el botón pedir números hasta que el USUARIO QUIERA e informar la 
 */
 function mostrar()
 {
-	debugger;
 	let contador;
 	let acumulador;
 	let respuesta;
@@ -23,10 +22,14 @@ function mostrar()
 		contador++;
 		numeroIngresado = prompt("Ingrese un numero");
 		numeroIngresado = parseInt(numeroIngresado);
+		while(isNaN(numeroIngresado)){
+			numeroIngresado = prompt("Error, Ingrese un numero");
+			numeroIngresado = parseInt(numeroIngresado);
+		}
 		acumulador = acumulador + numeroIngresado;
 		pregunta = prompt("Desea Ingresar Otro Numero?");
 	}
-
+	
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/contador;
 

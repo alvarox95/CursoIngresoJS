@@ -7,7 +7,6 @@ Al presionar el botón pedir números hasta que el usuario quiera, mostrar el n�
 */
 function mostrar()
 {
-	debugger;
 	let contador;
 	let acumulador;
 	let respuesta;
@@ -45,4 +44,4 @@ function mostrar()
 	txtIdMaximo.value=numeroMaximo;
 	txtIdMinimo.value=numeroMinimo;
 	
-}//FIN DE LA FUNCIÓN
+}

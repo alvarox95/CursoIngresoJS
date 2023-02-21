@@ -8,7 +8,6 @@ Al presionar el botón pedir 5 números e informar la suma acumulada y el promed
 
 function mostrar()
 {
-	debugger;
 	let contador;
 	let acumulador;
 	let numeroIngresado;
@@ -25,4 +24,4 @@ function mostrar()
 	
 	txtIdSuma.value=acumulador;
 	txtIdPromedio.value=acumulador/5;
-}//FIN DE LA FUNCIÓN
+}

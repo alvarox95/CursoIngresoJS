@@ -7,7 +7,6 @@ Al presionar el botón pedir números hasta que el usuario quiera, sumar los que
 */
 function mostrar()
 {
-	debugger;
 	let contador;
 	let acumulador;
 	let respuesta;
